@@ -1,3 +1,4 @@
+<!-- robot.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Robot – The Arguments</title>
   <style>
-    body { margin:0; font-family:'Segoe UI', Arial; background:#fffbe6; color:#222; }
-    header { background:#ffffffcc; backdrop-filter:blur(12px); padding:16px 24px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 16px rgba(0,0,0,0.08); position:sticky; top:0; }
-    nav a { margin-left:20px; text-decoration:none; color:#333; font-weight:500; }
-    nav a:hover { color:#c43b2f; }
-    h1 { text-align:center; color:#c43b2f; margin-top:40px; font-size:40px; }
-    .content { max-width:900px; margin:40px auto; background:white; padding:30px; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.08); font-size:18px; line-height:1.6; }
-    footer { text-align:center; padding:30px; margin-top:80px; background:white; box-shadow:0 -2px 10px rgba(0,0,0,0.08); }
+    body { margin:0; font-family:'Segoe UI', Arial; background:#fffbe6; color:#222; overflow-x:hidden; }
+    header { background:#ffffffcc; backdrop-filter:blur(12px); padding:16px 24px; display:flex; align-items:center; box-shadow:0 4px 16px rgba(0,0,0,0.08); position:sticky; top:0; z-index:20; }
+    .logo { display:flex; align-items:center; }
+    .logo img { height:50px; margin-right:10px; }
+    nav { margin-left:auto; }
+    nav a { margin-left:20px; text-decoration:none; color:#333; font-weight:500; transition:0.3s; }
+    nav a:hover { color:#c43b2f; transform:scale(1.05); }
+    h1 { text-align:center; color:#c43b2f; margin-top:60px; font-size:42px; opacity:0; transform:translateY(20px); animation:fadeUp 1s forwards; }
+    .content { max-width:900px; margin:40px auto; background:white; padding:30px; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.08); font-size:18px; line-height:1.6; opacity:0; transform:translateY(20px); animation:fadeUp 1s 0.2s forwards; text-align:center; }
+    .robot-img { max-width:100%; border-radius:12px; margin:20px 0; box-shadow:0 4px 16px rgba(0,0,0,0.1); }
+    footer { text-align:center; padding:30px; margin-top:80px; background:white; box-shadow:0 -2px 10px rgba(0,0,0,0.08); font-size:15px; color:#555; }
+    @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
   </style>
 </head>
 <body>
-
 <header>
-  <div><strong>The Arguments</strong></div>
+  <div class="logo"><img src="logo.png" alt="The Arguments Logo" /> <strong>The Arguments</strong></div>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="robot.html">Our Robot</a>
     <a href="project.html">Gracious Professionalism</a>
     <a href="corevalues.html">Core Values</a>
+    <a href="donate.html">Donate</a>
   </nav>
 </header>
-
 <h1>Our Robot</h1>
-
 <div class="content">
-  <p>Our robot was engineered for consistency, power, and reliability. We designed attachments that are quick to swap, simple to align, and strong enough for precision missions.</p>
-
-  <p>Features include:</p>
-  <ul>
-    <li>🧱 A sturdy, balanced chassis</li>
-    <li>⚙️ Modular attachments for fast mission changes</li>
-    <li>🔧 Accurate line-following and alignment strategies</li>
-    <li>📏 Measured runs to improve consistency</li>
-  </ul>
-
-  <p>We constantly iterate, test, and refine — because a great robot is never finished.</p>
+  <p>Meet our robot — clever, sturdy, and ready to take on any challenge we throw at it!</p>
+  <img src="robot.png" alt="The Arguments Robot" class="robot-img" />
+  <p>It’s designed for precision and speed, with modular attachments for different missions. We test, tweak, and improve constantly — because every run is a chance to get better.</p>
+  <p>Watching it in action is the best part — every competition brings excitement and teamwork together.</p>
 </div>
-
 <footer>© 2025 The Arguments</footer>
-
 </body>
 </html>
